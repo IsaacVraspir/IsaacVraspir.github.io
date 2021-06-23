@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SkettiOdin/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/SkettiOdin/static/js/main.b0e366f3.chunk.js",
+    "main.js.map": "/SkettiOdin/static/js/main.b0e366f3.chunk.js.map",
+    "runtime-main.js": "/SkettiOdin/static/js/runtime-main.b24f2484.js",
+    "runtime-main.js.map": "/SkettiOdin/static/js/runtime-main.b24f2484.js.map",
+    "static/js/2.2568106c.chunk.js": "/SkettiOdin/static/js/2.2568106c.chunk.js",
+    "static/js/2.2568106c.chunk.js.map": "/SkettiOdin/static/js/2.2568106c.chunk.js.map",
+    "static/js/3.ebdfaf02.chunk.js": "/SkettiOdin/static/js/3.ebdfaf02.chunk.js",
+    "static/js/3.ebdfaf02.chunk.js.map": "/SkettiOdin/static/js/3.ebdfaf02.chunk.js.map",
+    "index.html": "/SkettiOdin/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/SkettiOdin/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.2568106c.chunk.js.LICENSE.txt": "/SkettiOdin/static/js/2.2568106c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/SkettiOdin/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b24f2484.js",
+    "static/js/2.2568106c.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.b0e366f3.chunk.js"
+  ]
+}
