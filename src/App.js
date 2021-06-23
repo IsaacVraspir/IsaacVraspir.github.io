@@ -1,17 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {
-  Route,
-  BrowserRouter,
-  HashRouter,
-  Redirect,
-  Switch,
-} from "react-router-dom";
-import { withRouter, browserHistory } from "react-router";
-import styled from "@emotion/styled";
-/** @jsx jsx */
-import { css, jsx } from "@emotion/core";
-import { keyframes } from "emotion";
+
 
 
 function App() {
