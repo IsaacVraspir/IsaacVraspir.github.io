@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/innerPage/index.js"],"names":["InnerPage","props"],"mappings":"2HAQeA,UAPG,SAACC,GACjB,OACE","file":"static/js/5.ea66d236.chunk.js","sourcesContent":["\r\nconst InnerPage = (props) => {\r\n  return(\r\n    <div>\r\n      yo\r\n    </div>\r\n  )\r\n}\r\nexport default InnerPage;"],"sourceRoot":""}

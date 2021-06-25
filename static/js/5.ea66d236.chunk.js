@@ -1,0 +1,2 @@
+(this.webpackJsonpSkettiOdin=this.webpackJsonpSkettiOdin||[]).push([[5],{30:function(t,i,n){"use strict";n.r(i);var e=n(1);i.default=function(t){return Object(e.jsx)("div",{children:"yo"})}}}]);
+//# sourceMappingURL=5.ea66d236.chunk.js.map
