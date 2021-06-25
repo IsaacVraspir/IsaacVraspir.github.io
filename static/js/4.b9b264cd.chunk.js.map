@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/innerPageTwo/index.js"],"names":["InnerPageTwo","props"],"mappings":"2HAQeA,UAPM,SAACC,GACpB,OACE","file":"static/js/4.b9b264cd.chunk.js","sourcesContent":["\r\nconst InnerPageTwo = (props) => {\r\n  return(\r\n    <div>\r\n      WHAT\"S GOOD\r\n    </div>\r\n  )\r\n}\r\nexport default InnerPageTwo;"],"sourceRoot":""}
