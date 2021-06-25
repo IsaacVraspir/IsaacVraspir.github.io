@@ -1,0 +1,2 @@
+(this.webpackJsonpSkettiOdin=this.webpackJsonpSkettiOdin||[]).push([[5],{31:function(t,e,i){"use strict";i.r(e);var n=i(13),c=i(7);e.default=function(t){return Object(c.jsxs)("div",{children:[Object(c.jsx)(n.b,{to:"/",children:"Home"}),Object(c.jsx)(n.b,{to:"/pageTwo",children:"pageTwo"}),"yo"]})}}}]);
+//# sourceMappingURL=5.f3bf796c.chunk.js.map

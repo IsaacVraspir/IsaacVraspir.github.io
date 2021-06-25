@@ -1,30 +1,30 @@
 {
   "files": {
     "main.css": "/SkettiOdin/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/SkettiOdin/static/js/main.a5fd3491.chunk.js",
-    "main.js.map": "/SkettiOdin/static/js/main.a5fd3491.chunk.js.map",
-    "runtime-main.js": "/SkettiOdin/static/js/runtime-main.70c8625e.js",
-    "runtime-main.js.map": "/SkettiOdin/static/js/runtime-main.70c8625e.js.map",
-    "static/js/2.cc36ad8a.chunk.js": "/SkettiOdin/static/js/2.cc36ad8a.chunk.js",
-    "static/js/2.cc36ad8a.chunk.js.map": "/SkettiOdin/static/js/2.cc36ad8a.chunk.js.map",
+    "main.js": "/SkettiOdin/static/js/main.0d485a60.chunk.js",
+    "main.js.map": "/SkettiOdin/static/js/main.0d485a60.chunk.js.map",
+    "runtime-main.js": "/SkettiOdin/static/js/runtime-main.316218b6.js",
+    "runtime-main.js.map": "/SkettiOdin/static/js/runtime-main.316218b6.js.map",
+    "static/js/2.d9b5438c.chunk.js": "/SkettiOdin/static/js/2.d9b5438c.chunk.js",
+    "static/js/2.d9b5438c.chunk.js.map": "/SkettiOdin/static/js/2.d9b5438c.chunk.js.map",
     "static/css/3.518ce94c.chunk.css": "/SkettiOdin/static/css/3.518ce94c.chunk.css",
-    "static/js/3.1758be88.chunk.js": "/SkettiOdin/static/js/3.1758be88.chunk.js",
-    "static/js/3.1758be88.chunk.js.map": "/SkettiOdin/static/js/3.1758be88.chunk.js.map",
+    "static/js/3.c59e2ddc.chunk.js": "/SkettiOdin/static/js/3.c59e2ddc.chunk.js",
+    "static/js/3.c59e2ddc.chunk.js.map": "/SkettiOdin/static/js/3.c59e2ddc.chunk.js.map",
     "static/js/4.b9b264cd.chunk.js": "/SkettiOdin/static/js/4.b9b264cd.chunk.js",
     "static/js/4.b9b264cd.chunk.js.map": "/SkettiOdin/static/js/4.b9b264cd.chunk.js.map",
-    "static/js/5.1011338b.chunk.js": "/SkettiOdin/static/js/5.1011338b.chunk.js",
-    "static/js/5.1011338b.chunk.js.map": "/SkettiOdin/static/js/5.1011338b.chunk.js.map",
+    "static/js/5.f3bf796c.chunk.js": "/SkettiOdin/static/js/5.f3bf796c.chunk.js",
+    "static/js/5.f3bf796c.chunk.js.map": "/SkettiOdin/static/js/5.f3bf796c.chunk.js.map",
     "static/js/6.2a16cdc8.chunk.js": "/SkettiOdin/static/js/6.2a16cdc8.chunk.js",
     "static/js/6.2a16cdc8.chunk.js.map": "/SkettiOdin/static/js/6.2a16cdc8.chunk.js.map",
     "index.html": "/SkettiOdin/index.html",
     "static/css/3.518ce94c.chunk.css.map": "/SkettiOdin/static/css/3.518ce94c.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/SkettiOdin/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.cc36ad8a.chunk.js.LICENSE.txt": "/SkettiOdin/static/js/2.cc36ad8a.chunk.js.LICENSE.txt"
+    "static/js/2.d9b5438c.chunk.js.LICENSE.txt": "/SkettiOdin/static/js/2.d9b5438c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.70c8625e.js",
-    "static/js/2.cc36ad8a.chunk.js",
+    "static/js/runtime-main.316218b6.js",
+    "static/js/2.d9b5438c.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.a5fd3491.chunk.js"
+    "static/js/main.0d485a60.chunk.js"
   ]
 }
