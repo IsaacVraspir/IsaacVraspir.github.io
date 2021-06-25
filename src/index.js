@@ -5,13 +5,18 @@ import React, {
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+} from "react-router-dom";
 
 const App = lazy(() => import("./App"));
 
 ReactDOM.render(
   <Suspense fallback={<div>loading</div>}>
     <React.StrictMode>
-      <App />
+      <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </Suspense>,
   document.getElementById('root')

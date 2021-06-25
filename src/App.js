@@ -5,31 +5,39 @@ import React, {
 import './index.css';
 import {
   Switch,
-  BrowserRouter,
-  Route
+  Route,
+  withRouter
 } from "react-router-dom";
 
 const InnerPage = lazy(() => import("./components/innerPage/index.js"));
+const InnerPageTwo = lazy(() => import("./components/innerPageTwo/index.js"));
 
 function App() {
   return (
-    <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
-      <div>
-        get
-        <Switch>
-          <Route
-            exact={true}
-            path={"/innerPage"}
-            render={(props) => (
-              <InnerPage
-                {...props}
-              />
-            )}
-          />
-        </Switch>
-      </div>
-    </BrowserRouter>
+    <div>
+      <Switch>
+        <Route
+          exact={true}
+          path={'/pageTwo'}
+          render={(props) => (
+            <InnerPageTwo
+              {...props}
+            />
+          )}
+        />
+
+        <Route
+          exact={true}
+          path={''}
+          render={(props) => (
+            <InnerPage
+              {...props}
+            />
+          )}
+        />
+      </Switch>
+    </div>
   );
 }
 
-export default App;
+export default withRouter(App);
