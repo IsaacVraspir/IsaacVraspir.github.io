@@ -1,26 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {
+  lazy,
+} from "react";
+import './index.css';
+import {
+  Switch,
+  BrowserRouter,
+  Route
+} from "react-router-dom";
 
-
+const InnerPage = lazy(() => import("./components/innerPage/index.js"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+      <div>
+        get
+        <Switch>
+          <Route
+            exact={true}
+            path={"/innerPage"}
+            render={(props) => (
+              <InnerPage
+                {...props}
+              />
+            )}
+          />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
