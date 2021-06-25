@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {
-  BrowserRouter,
+  HashRouter,
 } from "react-router-dom";
 
 const App = lazy(() => import("./App"));
@@ -14,9 +14,9 @@ const App = lazy(() => import("./App"));
 ReactDOM.render(
   <Suspense fallback={<div>loading</div>}>
     <React.StrictMode>
-      <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+      <HashRouter >
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </React.StrictMode>
   </Suspense>,
   document.getElementById('root')
