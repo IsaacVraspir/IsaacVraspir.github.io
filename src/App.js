@@ -13,7 +13,7 @@ import {
   ContextProvider,
 } from "./components/userContext/userContext.js";
 
-const InnerPage = lazy(() => import("./components/innerPage/index.js"));
+const SkettiOdinHome = lazy(() => import("./components/skettiOdinHome/index.js"));
 const InnerPageTwo = lazy(() => import("./components/innerPageTwo/index.js"));
 
 const App = (props) => {
@@ -34,7 +34,7 @@ const App = (props) => {
                 exact={true}
                 path={'/'}
                 render={(props) => (
-                  <InnerPage
+                  <SkettiOdinHome
                     {...props}
                   />
                 )}
