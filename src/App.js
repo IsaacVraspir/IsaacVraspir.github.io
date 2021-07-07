@@ -14,7 +14,7 @@ import {
 } from "./components/userContext/userContext.js";
 
 const SkettiOdinHome = lazy(() => import("./components/skettiOdinHome/index.js"));
-const InnerPageTwo = lazy(() => import("./components/innerPageTwo/index.js"));
+const Leaderboard = lazy(() => import("./components/leaderboard/index.js"));
 
 const App = (props) => {
   return (
@@ -42,9 +42,9 @@ const App = (props) => {
 
               <Route
                 exact={true}
-                path={'/pageTwo'}
+                path={'/leaderboard'}
                 render={(props) => (
-                  <InnerPageTwo
+                  <Leaderboard
                     {...props}
                   />
                 )}

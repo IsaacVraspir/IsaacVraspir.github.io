@@ -17,6 +17,17 @@ const Navigator = (props) => {
         align-items: center;
       `}
     >
+      <div
+        css={css`
+          width: ${props.state.windowWidth}px;
+          background: #191919;
+          height: 39px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        `}
+      >
+
       <NavStyle.NavLink
         css={css`
         `}
@@ -36,6 +47,8 @@ const Navigator = (props) => {
       >
         Leaderboard
       </NavStyle.NavLink>
+      </div>
+
     </div>
   )
 }
