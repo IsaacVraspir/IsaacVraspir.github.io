@@ -9,14 +9,12 @@ const SkettiOdinHome = (props) => {
   return(
     <div
       css={css`
-        background: #191919;
+        background: ${props.state.darkestColor};
         height: ${props.state.windowHeight}px;
         width: ${props.state.windowWidth}px;
       `}
     >
-      {/*<Link to="/">Home</Link>*/}
       <Navigator />
-
       
     </div>
   )
@@ -26,6 +24,7 @@ export default wrapComponent(
   _.pick([
     "redirectToPage",
     "state.windowWidth",
-    "state.windowHeight"
+    "state.windowHeight",
+    "state.darkestColor",
   ])
 );

@@ -4,6 +4,10 @@ const UsePage = () => {
   const pageRef = useRef();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  const [heightOfNavigator, setHeightOfNavigator] = useState(45);
+  const [darkestColor, setDarkestColor] = useState("#191919");
+  const [lighterDarkColor, setLighterDarkColor] = useState("#313131");
+  const [isNightMode, setIsNightMode] = useState(true);
   
   const [redirect, setRedirect] = useState({
     alreadyRedirected: true,
@@ -30,15 +34,16 @@ const UsePage = () => {
       callback(undefined);
   };
 
+  //redirect global located at top of App.js
   useEffect(() => {
     if (redirect.alreadyRedirected === false && redirect.pathname !== "") {
       setRedirect({ alreadyRedirected: true, pathname: "" });
     }
   }, [redirect]);
 
+  //update width and height state on resize
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
-
     return () => window.removeEventListener("resize", updateDimensions);
   }, [pageRef]);
 
@@ -51,13 +56,29 @@ const UsePage = () => {
     redirectToPage: (whichPage) => {
       //console.log("redirecting", whichPage)
       setRedirect({ alreadyRedirected: false, pathname: whichPage });
+    },
+    nightModeColorSwitch: (nightModeToBe) => {
+      if(nightModeToBe == true){
+        setDarkestColor("#191919");
+        setLighterDarkColor("#313131");
+        setIsNightMode(true);
+      }
+      if(nightModeToBe == false){
+        setDarkestColor("#DDD");
+        setLighterDarkColor("#CCC");
+        setIsNightMode(false);
+      }
     }
   };
   return {
     state: {
       windowWidth,
       windowHeight,
-      redirect
+      redirect,
+      heightOfNavigator,
+      darkestColor,
+      lighterDarkColor,
+      isNightMode
     },
     callbackFunctions,
   };

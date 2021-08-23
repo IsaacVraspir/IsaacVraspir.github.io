@@ -15,6 +15,8 @@ import {
 
 const SkettiOdinHome = lazy(() => import("./components/skettiOdinHome/index.js"));
 const Leaderboard = lazy(() => import("./components/leaderboard/index.js"));
+const Logo = lazy(() => import("./components/logo/index.js"));
+const LogoWithoutBackground = lazy(() => import("./components/logoWithoutBackground/index.js"))
 
 const App = (props) => {
   return (
@@ -49,6 +51,29 @@ const App = (props) => {
                   />
                 )}
               />
+
+            {/*
+              <Route
+                exact={true}
+                path={'/logo'}
+                render={(props) => (
+                  <Logo
+                    {...props}
+                  />
+                )}
+              />
+
+              <Route
+                exact={true}
+                path={'/logoWithoutBackground'}
+                render={(props) => (
+                  <LogoWithoutBackground
+                    {...props}
+                  />
+                )}
+              />
+            */}
+            
             </Switch>
           )}
         </Consumer>
