@@ -119,6 +119,7 @@ const Leaderboard = (props) => {
       for(let i = 0; i < arrayToMakeGridRowOf.length; i++){
         jsxArray.push(
           <div
+            key={rowIndex * arrayToMakeGridRowOf.length - (arrayToMakeGridRowOf.length - i)}
             css={css`
               grid-column: ${i} / ${i};
               grid-row: ${rowIndex} / ${rowIndex};

@@ -15,6 +15,7 @@ import {
 
 const SkettiOdinHome = lazy(() => import("./components/skettiOdinHome/index.js"));
 const Leaderboard = lazy(() => import("./components/leaderboard/index.js"));
+const WXAdventures = lazy(() => import("./components/WXAdventures/index.js"));
 const Logo = lazy(() => import("./components/logo/index.js"));
 const LogoWithoutBackground = lazy(() => import("./components/logoWithoutBackground/index.js"))
 
@@ -47,6 +48,16 @@ const App = (props) => {
                 path={'/leaderboard'}
                 render={(props) => (
                   <Leaderboard
+                    {...props}
+                  />
+                )}
+              />
+
+              <Route
+                exact={true}
+                path={'/wxadventures'}
+                render={(props) => (
+                  <WXAdventures
                     {...props}
                   />
                 )}

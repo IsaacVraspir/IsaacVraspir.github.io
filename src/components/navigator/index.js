@@ -72,6 +72,17 @@ const Navigator = (props) => {
         Night Mode
       </NavStyle.NavLink>
 
+      <NavStyle.NavLink
+        css={css`
+          background: ${props.state.lighterDarkColor};
+        `}
+        onMouseDown={(evt) => {
+          props.redirectToPage("/wxadventures")
+        }}
+      >
+        WX Adventures
+      </NavStyle.NavLink>
+
       {/*
       <NavStyle.NavLink
         css={css`
