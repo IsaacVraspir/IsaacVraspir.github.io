@@ -8,6 +8,8 @@ import $ from "jQuery";
 import PixiStart from "components/WXAdventures/pixiStart.js";
 
 const WXAdventures = (props) => {
+  
+
   return (
     <div
       css={css`

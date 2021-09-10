@@ -10,8 +10,7 @@ import * as PIXI from "pixi.js";
 import hookNonMovingBackgroundMap from "./hookNonMovingBackgroundMap.js";
 import hookLoadAllAssets from "./hookLoadAllAssets";
 
-//export default React.memo(props => { 
-const PixiStart = (props) => {
+export default React.memo(props => { 
   console.log("why am i rerendering", props)
 
   const gameStage = useRef(new PIXI.Container())
@@ -22,13 +21,12 @@ const PixiStart = (props) => {
     new PIXI.Renderer({
       width: props.width,
       height: props.height,
-      backgroundAlpha: true,
       antialias: true,
       sharedLoader: true
     })
   )
 
-  //draws the fretboardRenderer view to the canvas
+  //draws the gameRenderer view to the canvas
   const updateMamaContainer = element => {
     if (element !== null && gameContainer.current == null) {
       // the element is the DOM object that we will use as container to add pixi stage(canvas)
@@ -47,19 +45,37 @@ const PixiStart = (props) => {
   //Containers
   const nonMovingBackgroundGround = useRef(new PIXI.Container());
 
+  //add containers to stage - order matters
+  gameStage.current.addChild(nonMovingBackgroundGround.current)
+
   const allHooks = {
     hookLoadAllAssets,
-    hookNonMovingBackgroundMap,
   };
 
-  allHooks.hookLoadAllAssets = hookLoadAllAssets(
-    loader
-  )
+  useEffect(() => {
+    allHooks.hookLoadAllAssets = hookLoadAllAssets(
+      loader,
+      nonMovingBackgroundGround,
+      updateRenderer
+    )
 
-  allHooks.hookNonMovingBackgroundMap = hookNonMovingBackgroundMap(
-    nonMovingBackgroundGround,
-    loader
-  )
+    updateRenderer();
+  }, [])
+
+  //destroy when leaving
+  useEffect(() => {
+    return () => {
+      gameRenderer.current.reset();
+      gameRenderer.current.destroy();
+      loader.reset();
+    }
+  }, []);
+
+  const updateRenderer = (deltaTime) => {
+    requestAnimationFrame(updateRenderer)
+
+    gameRenderer.current.render(gameStage.current)
+  }
 
   return (
     <div
@@ -71,11 +87,7 @@ const PixiStart = (props) => {
         updateMamaContainer(element)
       }}
     ></div>
-  )}
+  )}, (prevProps, nextProps) => {
+  return false;
+})
 
-  export default wrapComponent(
-    PixiStart,
-    _.pick([
-      ""
-    ])
-  );
