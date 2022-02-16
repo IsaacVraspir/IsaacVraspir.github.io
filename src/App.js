@@ -16,8 +16,10 @@ import {
 const SkettiOdinHome = lazy(() => import("./components/skettiOdinHome/index.js"));
 const Leaderboard = lazy(() => import("./components/leaderboard/index.js"));
 const WXAdventures = lazy(() => import("./components/WXAdventures/index.js"));
+const Paps = lazy(() => import("./components/paps/index.js"));
+const UltimateScaling = lazy(() => import("./components/ultimateScaling/index.js"));
 const Logo = lazy(() => import("./components/logo/index.js"));
-const LogoWithoutBackground = lazy(() => import("./components/logoWithoutBackground/index.js"))
+const LogoWithoutBackground = lazy(() => import("./components/logoWithoutBackground/index.js"));
 
 const App = (props) => {
   return (
@@ -58,6 +60,26 @@ const App = (props) => {
                 path={'/wxadventures'}
                 render={(props) => (
                   <WXAdventures
+                    {...props}
+                  />
+                )}
+              />
+
+              <Route
+                exact={true}
+                path={'/paps'}
+                render={(props) => (
+                  <Paps
+                    {...props}
+                  />
+                )}
+              />
+
+              <Route
+                exact={true}
+                path={'/ultimateScaling'}
+                render={(props) => (
+                  <UltimateScaling
                     {...props}
                   />
                 )}

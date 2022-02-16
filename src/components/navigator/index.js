@@ -83,6 +83,30 @@ const Navigator = (props) => {
         WX Adventures
       </NavStyle.NavLink>
 
+      <NavStyle.NavLink
+        css={css`
+          background: ${props.state.lighterDarkColor};
+        `}
+        onMouseDown={(evt) => {
+          props.redirectToPage("/ultimateScaling")
+        }}
+      >
+        UltimateScaling
+      </NavStyle.NavLink>
+
+      {/*
+      <NavStyle.NavLink
+        css={css`
+          background: ${props.state.lighterDarkColor};
+        `}
+        onMouseDown={(evt) => {
+          props.redirectToPage("/paps")
+        }}
+      >
+        Paps
+      </NavStyle.NavLink>
+      */}
+
       {/*
       <NavStyle.NavLink
         css={css`
