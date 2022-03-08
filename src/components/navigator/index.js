@@ -12,14 +12,17 @@ const Navigator = (props) => {
         flex-direction: row;
         height: ${props.state.heightOfNavigator}px;
         width: ${props.state.windowWidth}px;
+        max-width: ${props.state.windowWidth}px;
         background: rgb(25,25,25);
         background: linear-gradient(58deg, rgba(52,84,209,1) 0px, #d1345b 126px, #acf39d 100%);
         align-items: flex-start;
+        overflow-x: hidden;
       `}
     >
       <div
         css={css`
           width: ${props.state.windowWidth}px;
+          max-width: ${props.state.windowWidth}px;
           background: ${props.state.lighterDarkColor};
           height: 43px;
           display: flex;
@@ -31,6 +34,8 @@ const Navigator = (props) => {
       <NavStyle.NavLink
         css={css`
           background: ${props.state.lighterDarkColor};
+          flex-wrap: nowrap;
+          white-space: nowrap;
         `}
         onMouseDown={(evt) => {
           props.redirectToPage("/")
@@ -42,6 +47,8 @@ const Navigator = (props) => {
       <NavStyle.NavLink
         css={css`
           background: ${props.state.lighterDarkColor};
+          flex-wrap: nowrap;
+          white-space: nowrap;
         `}
         onMouseDown={(evt) => {
           props.redirectToPage("/")
@@ -53,6 +60,8 @@ const Navigator = (props) => {
       <NavStyle.NavLink
         css={css`
           background: ${props.state.lighterDarkColor};
+          flex-wrap: nowrap;
+          white-space: nowrap;
         `}
         onMouseDown={(evt) => {
           props.redirectToPage("/leaderboard")
@@ -64,6 +73,8 @@ const Navigator = (props) => {
       <NavStyle.NavLink
         css={css`
           background: ${props.state.lighterDarkColor};
+          flex-wrap: nowrap;
+          white-space: nowrap;
         `}
         onMouseDown={(evt) => {
           props.nightModeColorSwitch(!props.state.isNightMode)
@@ -75,6 +86,8 @@ const Navigator = (props) => {
       <NavStyle.NavLink
         css={css`
           background: ${props.state.lighterDarkColor};
+          flex-wrap: nowrap;
+          white-space: nowrap;
         `}
         onMouseDown={(evt) => {
           props.redirectToPage("/wxadventures")
@@ -86,6 +99,8 @@ const Navigator = (props) => {
       <NavStyle.NavLink
         css={css`
           background: ${props.state.lighterDarkColor};
+          flex-wrap: nowrap;
+          white-space: nowrap;
         `}
         onMouseDown={(evt) => {
           props.redirectToPage("/ultimateScaling")
