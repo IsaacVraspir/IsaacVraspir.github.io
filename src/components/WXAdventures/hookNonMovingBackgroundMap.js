@@ -1,6 +1,3 @@
-import React, { useState, useCallback, useRef, useEffect } from "react"
-import { props } from "lodash/fp";
-import pixiStart from "./pixiStart";
 import * as PIXI from "pixi.js";
 
 export default (

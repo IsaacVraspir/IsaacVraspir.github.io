@@ -7,6 +7,7 @@ const UsePage = () => {
   const [heightOfNavigator, setHeightOfNavigator] = useState(45);
   const [darkestColor, setDarkestColor] = useState("#191919");
   const [lighterDarkColor, setLighterDarkColor] = useState("#313131");
+  const [lightestColor, setLightestColor] = useState("#ffffff");
   const [isNightMode, setIsNightMode] = useState(true);
   
   const [redirect, setRedirect] = useState({
@@ -61,11 +62,13 @@ const UsePage = () => {
       if(nightModeToBe == true){
         setDarkestColor("#191919");
         setLighterDarkColor("#313131");
+        setLightestColor("#ffffff");
         setIsNightMode(true);
       }
       if(nightModeToBe == false){
         setDarkestColor("#DDD");
         setLighterDarkColor("#CCC");
+        setLightestColor("#000000");
         setIsNightMode(false);
       }
     }
@@ -78,7 +81,8 @@ const UsePage = () => {
       heightOfNavigator,
       darkestColor,
       lighterDarkColor,
-      isNightMode
+      isNightMode,
+      lightestColor
     },
     callbackFunctions,
   };

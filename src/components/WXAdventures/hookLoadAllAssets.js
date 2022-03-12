@@ -1,6 +1,3 @@
-import React, { useState, useCallback, useRef, useEffect } from "react"
-import pixiStart from "./pixiStart";
-import * as PIXI from "pixi.js";
 import hookNonMovingBackgroundMap from "./hookNonMovingBackgroundMap";
 
 //background

@@ -1,13 +1,10 @@
 /** @jsxImportSource @emotion/react */
-import { wrapComponent } from "../userContext/userContext.js";
 import _ from "lodash/fp";
 import React, { useEffect, useLayoutEffect, useState, useRef } from "react"
 import { css } from "@emotion/react"
-import Navigator from "../navigator/index.js";
-import $ from "jQuery";
-import WixossTCG from "components/WXAdventures/WixossTCG.xml";
+//import WixossTCG from "components/WXAdventures/WixossTCG.xml";
 import * as PIXI from "pixi.js";
-import hookNonMovingBackgroundMap from "./hookNonMovingBackgroundMap.js";
+//import hookNonMovingBackgroundMap from "./hookNonMovingBackgroundMap.js";
 import hookLoadAllAssets from "./hookLoadAllAssets";
 
 export default React.memo(props => { 
@@ -36,7 +33,6 @@ export default React.memo(props => {
         gameContainer.current &&
         gameContainer.current.children.length <= 0
       ) {
-        //console.log("DID Freboard pixi container GET APPENDED??");
         gameContainer.current.appendChild(gameRenderer.current.view)
       }
     }
